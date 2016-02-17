@@ -1,5 +1,7 @@
 Thingspeak::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
+  
+  config.eager_load = false
 
   # required by devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
